@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  maring:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Heebo";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout__header{
+  min-height: 60px;
+}
+
+.layout__main{
+  flex-grow: 1;
+}
+
+.layout__footer{
+  max-height: 182px;
+}
+
+button{
+  padding: 10px;
+  border:1px solid black;
+  cursor: pointer;
+}

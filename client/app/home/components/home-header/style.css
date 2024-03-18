@@ -1,0 +1,41 @@
+.home-header{
+	display: flex;
+	justify-content: center;
+}
+
+.container{
+	width: 858px;
+}
+
+.home-header__content{
+	display: flex;
+}
+
+.home-header__column-left__element{
+	margin-top: 40px;
+}
+
+.home-header__column-right{
+	display: flex;
+	align-items: center;
+	min-width: 243px;
+	margin-left: 115px;
+}
+
+
+.home-header__title{
+	font-size: 44px;
+	font-weight: bold;
+}
+
+.home-header__description{
+	font-size: 16px;
+}
+
+.home-header__button{
+	height: 47px;
+	width: 208px;
+	color: white;
+	background-color: #ff6464;
+	border: none;
+}

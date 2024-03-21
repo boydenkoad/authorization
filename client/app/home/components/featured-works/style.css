@@ -1,0 +1,18 @@
+.featured-works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-works__title{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+
+@media (max-width:400px) {
+    .featured-works__title{
+        text-align: center;
+        font-size: 18px;
+    }
+}

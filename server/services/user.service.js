@@ -1,4 +1,4 @@
-const bcypr  = require("bcrypt")
+const bcrypt  = require("bcrypt")
 const tokenService = require("./token.service")
 const { ApiError, BadRequestError,UnauthorizedError} = require("../exceptions/api-errors")
 
@@ -15,7 +15,7 @@ class UserService{
 
 		if(user) throw new BadRequestError("Email уже используется.")
 
-		const hash = await bcypr.hash(password,salt)
+		const hash = await bcrypt.hash(password,salt)
 
 		userId +=1
 
@@ -39,7 +39,7 @@ class UserService{
 
 		if(!user) throw new BadRequestError("Неверный логин или пароль")
 
-		const isCorrectPass = await bcypr.compare(pass,user.password)
+		const isCorrectPass = await bcrypt.compare(pass,user.password)
 
 		if(!isCorrectPass) throw new BadRequestError("Неверный логин или пароль")
 

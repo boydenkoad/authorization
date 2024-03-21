@@ -1,0 +1,115 @@
+.featured-work-card{
+    padding: 30px 0px;
+    display: flex;
+    height: 100%;
+    border-bottom: 1px #E0E0E0 solid;
+}
+
+.featured-work-card__left-column{
+    min-width: 247px;
+}
+
+.featured-work-card__right-column{
+    margin-left: 18px;
+}
+
+.featured-work-card__image{
+    border-radius: 6px;
+}
+
+.featured-work-card__title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.featured-work-card__date-and-tag{
+    display: flex;
+    margin-top: 10px;
+}
+
+.featured-work-card__date{
+    color: white;
+    background-color: #142850;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    height: 25px;
+    width: 62px;
+    border-radius: 16px;
+}
+
+.featured-work-card__tag{
+    font-size: 20px;
+    font-weight: 400;
+    color: #8695A4;
+    margin-left: 26px;
+}
+
+.featured-work-card__description{
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+@media (max-width:650px){
+    .featured-work-card{
+        padding: 30px 0;
+        display: flex;
+        height: 100%;
+        border-bottom: 1px #E0E0E0 solid;
+        flex-direction: column;
+    }
+    
+    .featured-work-card__left-column{
+        min-width: 247px;
+
+        >img{
+            width: 339px;
+            height: 220px;
+        }
+    }
+    
+    .featured-work-card__right-column{
+        margin-left: 0px;
+        margin-top: 17px;
+    }
+    
+    .featured-work-card__image{
+        border-radius: 6px;
+    }
+    
+    .featured-work-card__title{
+        font-size:24px;
+        font-weight: bold;
+    }
+    
+    .featured-work-card__date-and-tag{
+        display: flex;
+        margin-top: 16px;
+    }
+   
+    .featured-work-card__date{
+        color: white;
+        background-color: #142850;
+        font-size: 16px;
+        text-align: center;
+        font-weight: bold;
+        height: 25px;
+        width: 62px;
+        border-radius: 16px;
+    }
+    
+    .featured-work-card__tag{
+        font-size: 16px;
+        font-weight: 400;
+        color: #8695A4;
+        margin-left: 26px;
+    }
+    
+    .featured-work-card__description{
+        margin-top: 22px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

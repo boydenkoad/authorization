@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <main className="flex-grow">
-      
-    </main>
-  );
+import HomePage from './home/page'
+
+export default function Page(){
+    return <HomePage/>
 }

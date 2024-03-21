@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import classNames from 'classnames'
 import {PostCard,IPostCard} from "./components/post-card/post-card"
 import './style.css'
@@ -23,6 +24,14 @@ const posts:IPostCard[]=[
 
 export function RecentPosts({className}:RecentPostsProps){
 	return <div className={classNames(className,"recent-posts")}>
-		{posts.map(post=><PostCard  post={post} className="recent-posts__post"/>)}
+		<div className='container'>
+			<div className='recent-posts__title__view'>
+				<h3 className='recent-posts__title'>Recent posts</h3>
+				<Link className="recent-posts__view" href={''}>View all</Link>
+			</div>
+			<div className='recent-posts__list'>
+			{posts.map(post=><PostCard key={post.id}  post={post} className="recent-posts__list__element"/>)}
+			</div>
+		</div>
 	</div>
 }

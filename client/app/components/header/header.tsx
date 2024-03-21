@@ -10,9 +10,9 @@ interface HeaderProps{
 
 export function Header ({className}:HeaderProps){
 
-	const {value} = useAppSelector(state=>state.authReducer)
+	const {id} = useAppSelector(state=>state.authReducer)
 
-	if(value === 0) return <></>
+	if(!id) return <></>
 
 	return <header className={classNames(className,"header")}>
 		<nav className="header__navigate">

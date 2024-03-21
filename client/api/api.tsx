@@ -1,6 +1,7 @@
 import axios from "axios"
+import { IUser } from "./types/user"
 
-const initi = axios.create({
+const instance  = axios.create({
 	baseURL:"http://localhost:4000",
 	headers:{
 		"Content-Type":"application/json"
@@ -8,9 +9,13 @@ const initi = axios.create({
 })
 
 export const Api = {
-	async registration(user:any){
-		const result = initi.post('/registration',user)
+	async registration(user:IUser){
+		const result = instance.post('/registration',user)
 		return result
+	},
 
+	async authorization(user:IUser){
+		const result = instance.post('/login',user)
+		return result
 	}
 }

@@ -6,17 +6,13 @@ interface IUser{
 	accessToken:string
 }
 
-interface Error{
-
-}
-
-interface InitiaState{
+interface InitialState{
 	id:number | null,
 	email:string | null,
 	accessToken: string | null
 }
 
-const initialState:InitiaState = {
+const initialState:InitialState = {
 	id:null, 
 	email:null,
 	accessToken:null
@@ -27,15 +23,13 @@ export const authSlice= createSlice({
 	name:'auth',
 	initialState,
 	reducers:{
-		authorizate:(state,action:PayloadAction<IUser>)=>{
-			try{
-				
-			}catch(e){
-
-			}
-		}
+		authorization:(state,action:PayloadAction<IUser>)=>{
+			state.id = action.payload.id
+			state.email = action.payload.email
+			state.accessToken = action.payload.accessToken
+		},
 	}
 })
 
-export const {authorizate} = authSlice.actions
+export const {authorization} = authSlice.actions
 

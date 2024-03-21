@@ -1,4 +1,5 @@
 import classNames from 'classnames'
+import './style.css'
 
 export interface IPostCard{
 	id:number,
@@ -23,6 +24,7 @@ export function PostCard({post,className}:PostCardProps){
 		</h2>
 		<div className="post-card__date-and-tags">
 			<span className="post-card__date-and-tags__element post-card__date">{date}</span>
+			<span className="post-card__date-and-tags__element"></span>
 			<span className="post-card__date-and-tags__element post-card__tags">{tags}</span>
 		</div>
 		<p className="post-card__description">

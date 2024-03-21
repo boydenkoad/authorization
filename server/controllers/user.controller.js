@@ -16,7 +16,7 @@ class UserController{
 			const user = await userService.registration(email,password)
 
 			return res.json({
-				message:`Электоронный адрес, ${user.email} успешно зарегистирован.`
+				message:`Электронный адрес, ${user.email} успешно зарегистрирован.`
 			})
 
 		}catch(e){
@@ -58,7 +58,7 @@ class UserController{
 			return res.json(result)
 
 		}catch(e){
-			return res.json('Произошла ошибка')
+			return next(e)
 		}
 	}
 

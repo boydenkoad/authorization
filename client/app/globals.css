@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 *{
-  maring:0;
+  margin:0;
   padding:0;
   box-sizing: border-box;
   font-family: "Heebo";
@@ -15,11 +15,15 @@
 .layout{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .layout__header{
   min-height: 60px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px;
 }
 
 .layout__main{
@@ -27,7 +31,7 @@
 }
 
 .layout__footer{
-  max-height: 182px;
+  min-height: 182px;
 }
 
 button{

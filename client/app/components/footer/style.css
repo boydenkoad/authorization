@@ -5,6 +5,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
+
+	>span{
+		margin-top: 23px;
+	}
 }
 
 .footer__icons{
@@ -18,7 +23,5 @@
 }
 
 .footer{
-	>span{
-		margin-top: 26px;
-	}
+	
 }

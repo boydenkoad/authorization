@@ -2,8 +2,31 @@
 	height: 100%;
 }
 
+.home-page__header{
+	margin-top: 100px;
+}
 
-.home-page__recents-posts{
+
+.home-page__recent-posts{
 	margin-top: 71px;
-	height: 369px;
+	padding: 20px 0;
+	height: auto;
+}
+
+
+@media (max-width:810px){
+	.home-page{
+		height: 100%;
+	}
+	
+	.home-page__header{
+		margin-top: 100px;
+	}
+	
+	
+	.home-page__recent-posts{
+		margin-top: 48px;
+		padding: 15px 0;
+		height: auto;
+	}
 }
